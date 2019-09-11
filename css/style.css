@@ -1,0 +1,13 @@
+body
+{
+	font-family: 'Gayathri', sans-serif;
+	text-align: center;
+}
+
+.button1{
+	visibility: hidden;
+}
+
+.button2{
+	visibility: hidden;
+}
