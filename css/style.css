@@ -4,10 +4,12 @@ body
 	text-align: center;
 }
 
-.button1{
+.button1
+{
 	visibility: hidden;
 }
 
-.button2{
+.button2
+{
 	visibility: hidden;
 }
