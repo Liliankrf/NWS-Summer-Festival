@@ -13,3 +13,20 @@ body
 {
 	visibility: none;
 }
+
+.inscriptionEntreprise, .inscriptionEtudiant {
+	visibility: hidden;
+}
+
+.containerConnexion{
+	display: inline-block;
+	text-align: center;
+	background-color: aqua;
+	width: 700px;
+	height: 1000px;
+}
+
+.bouton{
+	width: 200px;
+	height: 200px;
+}
