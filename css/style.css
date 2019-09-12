@@ -6,12 +6,36 @@ body
 
 .button1
 {
-	visibility: none;
+	background-color: white;
+	border-radius: 10px;
+	border-color: green;
+	width: 80px;
+	height: 30px;
+	box-shadow: 0px 5px 0px #383837, inset 0px 2px 0px rgba(255, 255, 255, 0.3), 0px 20px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+.button1:hover
+{
+	color: red;
+	transform: scale(1.1);
 }
 
 .button2
 {
-	visibility: none;
+	background-color: white;
+	border-radius: 10px;
+	border-color: green;
+	width: 80px;
+	height: 30px;
+	box-shadow: 0px 5px 0px #383837, inset 0px 2px 0px rgba(255, 255, 255, 0.3), 0px 20px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+.button2:hover
+{
+	color: red;
+	transform: scale(1.1);
 }
 
 .inscriptionEntreprise, .inscriptionEtudiant {
