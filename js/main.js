@@ -13,10 +13,12 @@ function ani(){
         console.log("reussis");
         document.getElementById('inscriptionEtudiant').style.display = 'none';
         j = 0;
-    }
+        }
 
     console.log("la valeur de i est : " + i);
     console.log("la valeur de j est : " + j);
+
+    scrollDown();
     
 }
 let j = 0;
@@ -28,6 +30,15 @@ function ani2(){
     else{
     document.getElementById('inscriptionEtudiant').style.display = 'block';
     }
+    scrollDown();
+
 
     console.log("la valeur de j est : " + j);
+}
+
+function scrollDown() {
+    window.scrollTo(0, 1000);    
+}
+function scrollUp() {
+    window.scrollTo(0, -1000);       
 }

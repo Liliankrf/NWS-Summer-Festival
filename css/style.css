@@ -1,6 +1,9 @@
 @import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
 
-html, body{
+html {
+	scroll-behavior: smooth;
+}
+body{
 	margin: 0;
 	padding: 0;
 }
