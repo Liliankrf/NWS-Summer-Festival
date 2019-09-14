@@ -181,30 +181,3 @@ a:hover{text-decoration: none; color: rgb(16, 39, 16); cursor: pointer;}
 }
 
 /*CSS accueil entreprise*/
-*
-{
-	text-align: center;
-}
-h1
-{
-	padding-bottom: 20px;
-}
-.img
-{
-	text-align: center;
-}
-.main
-{
-	font-size: 20px;
-	display: grid;
-	grid-template-columns: 1fr 1fr 80px;
-	grid-template-rows: 1fr 1fr;
-}
-.icon
-{
-	grid-row: span 2;
-}
-.spe
-{
-	
-}
