@@ -181,7 +181,7 @@ a:hover{text-decoration: none; color: rgb(16, 39, 16); cursor: pointer;}
 }
 
 /*CSS accueil entreprise*/
-*
+.logo
 {
 	text-align: center;
 }
@@ -192,19 +192,26 @@ h1
 .img
 {
 	text-align: center;
+	width: 35%;
+	padding-left: 200px;
 }
 .main
 {
-	font-size: 20px;
+	border: solid red;
+	font-size: 25px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 80px;
+	grid-template-columns: 1fr 1fr 200px;
 	grid-template-rows: 1fr 1fr;
 }
 .icon
 {
 	grid-row: span 2;
 }
-.spe
+.SpeName
 {
-	
+	grid-row: span 2;
+}
+p
+{
+	padding-bottom: 20px;
 }
