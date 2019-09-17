@@ -215,3 +215,71 @@ p
 {
 	padding-bottom: 20px;
 }
+
+/*CSS Menu étudiants*/
+*
+{
+	text-align: center;
+}
+.button1 
+{
+	font-size: 40px;
+  	background-color: white;
+  	color: black;
+  	border: 2px solid gray;
+  	padding: 25px;
+}
+.btn1
+{
+	padding-bottom: 20px;
+}
+.button2
+{
+	font-size: 40px;
+  	background-color: white;
+  	color: black;
+  	border: 2px solid gray;
+  	padding: 25px;	
+}
+.bttn2
+{
+	padding-bottom: 20px;
+}
+.button3 
+{
+	font-size: 40px;
+  	background-color: white;
+  	color: black;
+  	border: 2px solid gray;
+  	padding: 25px;	
+}
+.btn3
+{
+	padding-bottom: 20px;
+}
+footer
+{
+	position: fixed;
+	bottom: 0px;
+	border: solid;
+	background-color: lightgray;
+	height: 120px;
+	width: 100%;
+	padding-top: 20px;
+}
+#img1
+{
+	float: left;
+	width: 100px;
+	padding-left: 50px;
+}
+#img2
+{
+	width: 100px;
+}
+#img3
+{
+	float: right;
+	width: 100px;
+	padding-right: 50px;
+}
