@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NWS Need Web Student</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div class="ContainerAccueil">
+		<img src="logo.png" alt="">
+
+		<h2>Vous êtes ?</h2>
+		<div class="btn">
+			Entreprise
+		</div>
+
+		<div class="btn" onClick="ani()">
+				Étudiant
+		</div>
+	</div>
+	<div id="containerConnexion">
+		<div class="login-box">
+				<h1>Connexion</h1>
+				<div class="textbox">
+					<i class="fas fa-user"></i>
+					<input type="text" placeholder="identifiant">
+				</div>
+				
+				<div class="textbox">
+					<i class="fas fa-lock"></i>
+					<input type="password" placeholder="Mot de passe">
+				</div>
+				
+				<input type="button" class="btn2" value="Connexion">
+		</div>
+		<a href="mdpforget">mot de passe oublié</a>
+		<h2>OU</h2>
+		<div class="btn" onclick="ani2()">
+			Inscription
+		</div>
+	</div>
+
+	<div class="inscriptionEntreprise">
+	<form method="get">
+			<div class="FormInscription">
+				<label for="nom">Nom</label>
+				<input type="text" name="nom" required size="40"
+						placeholder="Nom Entreprise"
+						minlength="1" maxlength="32" required>
+			</div>
+			<div class="FormInscription">
+				<label for="nom">Localisation</label>
+				<input type="text" name="localisation" required size="40"
+						placeholder="localisation"
+						minlength="1" maxlength="32" required>
+			</div>
+			<div class="FormInscription">
+				<label for="nom">Email</label>
+				<input type="text" name="email" required size="40"
+						placeholder="exemple@free.fr"
+						minlength="1" maxlength="32" required>
+			</div>
+			<div class="FormInscription">
+				<label for="nom">Mot de passe</label>
+				<input type="password" name="password" required size="40"
+						placeholder="Mot De Passe"
+						minlength="8" required>
+			</div>
+			<div class="FormInscription">
+				<label for="nom">Numéro de teléphone</label>
+				<input type="text" name="telephone" required size="40"
+						placeholder="Numéro de telephone"
+						minlength="1" maxlength="32">
+			</div>
+		</form>
+	</div>
+		<br>
+	<div id="inscriptionEtudiant">
+		<div class="sectionInscription">
+		<div class="form">
+			<input type="text" name="nom" autocomplete="off" required>
+			<label for="name" class="label-name">
+				<span class="content-name">Nom</span>
+			</label>
+		</div>
+		<div class="form">
+			<input type="text" name="prenom" autocomplete="off" required>
+			<label for="name" class="label-name">
+				<span class="content-name">Prénom</span>
+			</label>
+		</div>
+		<div class="form">
+			<input type="text" name="email" autocomplete="off" required>
+			<label for="name" class="label-name">
+				<span class="content-name">Email</span>
+			</label>
+		</div>
+		<div class="form">
+			<input type="text" name="numero" autocomplete="off" required>
+			<label for="name" class="label-name">
+				<span class="content-name">Numéro de telephone</span>
+			</label>
+		</div>
+		<div class="form">
+			<input type="text" name="specialite" autocomplete="off" required>
+			<label for="name" class="label-name">
+				<span class="content-name">Spécialité</span>
+			</label>
+		</div>
+		<div class="form">
+			<input type="text" name="statut" autocomplete="off" required>
+			<label for="name" class="label-name">
+				<span class="content-name">Statut</span>
+			</label>
+		</div>
+	<div class="btn">Valider</div>	
+	</div>
+	</div>
+</body>
+</html>
