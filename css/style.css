@@ -221,13 +221,18 @@ p
 {
 	text-align: center;
 }
+#img
+{
+	padding-bottom: 35%;
+}
 .button1 
 {
-	font-size: 40px;
+	font-size: 50px;
   	background-color: white;
   	color: black;
   	border: 2px solid gray;
-  	padding: 25px;
+  	padding: 28px;
+  	width: 72%;
 }
 .btn1
 {
@@ -235,11 +240,12 @@ p
 }
 .button2
 {
-	font-size: 40px;
+	font-size: 50px;
   	background-color: white;
   	color: black;
   	border: 2px solid gray;
-  	padding: 25px;	
+  	padding: 25px;
+  	width: 72%;	
 }
 .bttn2
 {
@@ -247,11 +253,12 @@ p
 }
 .button3 
 {
-	font-size: 40px;
+	font-size: 50px;
   	background-color: white;
   	color: black;
   	border: 2px solid gray;
-  	padding: 25px;	
+  	padding: 28px;
+  	width: 72%;	
 }
 .btn3
 {
