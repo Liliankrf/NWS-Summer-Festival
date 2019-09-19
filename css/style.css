@@ -410,8 +410,25 @@ footer
 {
 	text-align: center;
 }
+#logo
+{
+	width: 40%;
+	padding-bottom: 80px;
+	padding-top: 20px;
+}
+input
+{
+	font-size: 35px;
+	margin-bottom: 20px;
+	border-radius: 
+}
+.inscription
+{
+	padding-bottom: 20%;
+}
 button
 {
 	border-radius: 50px;
 	background-color: white;
+	margin-top: 50px;
 }
