@@ -3,7 +3,7 @@
 html {
 	scroll-behavior: smooth;
 }
-body{
+html, body{
 	margin: 0;
 	padding: 0;
 }
@@ -15,42 +15,97 @@ body
 a{text-decoration: none;color: rgb(37, 92, 37);}
 a:hover{text-decoration: none; color: rgb(16, 39, 16); cursor: pointer;}
 
-.ContainerAccueil{
+#ContainerAccueil{
 	text-align: center;
+	display: none;
 }
 
-.ContainerAccueil img{
-	width: 200px;
-	height: 200px;
+#ContainerAccueil .logoAccueil{
+	margin-top: 10px;
+	width: 300px;
+	height: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.btn
+#logostart{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.logoAccueil2{
+	width: 40%;
+	height: auto;
+	animation-duration: 4s;
+	animation-name: fadeInOut;
+}
+
+		@keyframes fadeInOut {
+			from{
+				transform: scale(0.4);
+
+			}
+			to{
+				transform: scale(0.8);
+			}	
+		}
+
+.PiedDePageAccueil{
+	width: 100%;
+	height: 100%;
+}
+
+.btnEtu, .btn
 {
-	background-color: #f8f8f8;
-	border-radius: 10px;
-	border-color: rgb(37, 92, 37);
+	background-color: #FFFFFF;
+	border-radius: 25px;
+	border-color: #D9E4AC;
+	border: 1px solid #5CB794;
 	width: 150px;
 	height: 50px;
 	margin: 20px auto;
 	text-align: center;
 	line-height: 60px;
 	font-size: 20px;
-	font-weight: 700;
-	box-shadow: 0px 5px 0px #383837, inset 0px 2px 0px rgba(255, 255, 255, 0.3), 0px 20px 20px rgba(0, 0, 0, 0.3);
+	font-weight: 500;
+	transition: all 0.4s ease;
+	cursor: pointer;
+}
+.btnEntre
+{
+	background-color: #D9E4AC;
+	border-radius: 25px;
+	border: 1px solid #D9E4AC;
+	width: 150px;
+	height: 50px;
+	margin: 20px auto;
+	text-align: center;
+	line-height: 60px;
+	font-size: 20px;
+	font-weight: 500;
 	transition: all 0.4s ease;
 	cursor: pointer;
 }
 
-.btn:hover
+.btnEtu:hover
 {
-	color: rgb(37, 92, 37);
-	box-shadow: 0px 5px 0px rgb(37, 92, 37), inset 0px 2px 0px rgba(255, 255, 255, 0.3), 0px 20px 20px rgba(0, 0, 0, 0.3);
+	color: black;
+	border: 0px solid white;
+	box-shadow: 0px 5px 0px #D9E4AC, inset 0px 2px 0px rgba(255, 255, 255, 0.3), 0px 5px 5px rgba(0, 0, 0, 0.5);
 	transform: scale(1.1);
 }
-
+.btnEntre:hover
+{
+	color: black;
+	border: 0px solid white;
+	box-shadow: 0px 5px 0px #D9E4AC, inset 0px 2px 0px rgba(255, 255, 255, 0.3), 0px 5px 5px rgba(0, 0, 0, 0.5);
+	transform: scale(1.1);
+}
 .inscriptionEntreprise, #inscriptionEtudiant {
 	display: none;
 }
@@ -121,7 +176,7 @@ a:hover{text-decoration: none; color: rgb(16, 39, 16); cursor: pointer;}
 }
 .btn2:hover{	transform: scale(1.1);}
 
-.sectionInscription{
+form{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -132,7 +187,7 @@ a:hover{text-decoration: none; color: rgb(16, 39, 16); cursor: pointer;}
 	margin: 20px;
 	width: 50%;
 	position: relative;
-	height: 50px;
+	height: 60px;
 	overflow: hidden;
 }
 
@@ -165,6 +220,7 @@ a:hover{text-decoration: none; color: rgb(16, 39, 16); cursor: pointer;}
 	transform: translateX(-100%);
 	transition: transform 0.3s ease;
 }
+
 .content-name{
 	position: absolute;
 	bottom: 5px;
@@ -179,6 +235,24 @@ a:hover{text-decoration: none; color: rgb(16, 39, 16); cursor: pointer;}
 .form input:focus + .label-name::after, .form input:valid + .label-name::after{
 	transform: translateX(0%);
 }
+
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+    .logoAccueil2{
+		width: 300px;
+		height: 150px;
+	}
+	#logostart{
+		height: 100vh;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+}
+
 
 /*CSS accueil entreprise*/
 .logo
