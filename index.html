@@ -8,15 +8,17 @@
 	<script src="js/main.js"></script>
 </head>
 <body>
-	<div class="ContainerAccueil">
-		<img src="logo.png" alt="">
-
+	<div id="logostart">
+			<img class="logoAccueil2" src="Images/logo.png" alt="">
+	</div>
+	<div id="ContainerAccueil">
+		<img class="logoAccueil" src="Images/logo.png" alt="">
 		<h2>Vous êtes ?</h2>
-		<div class="btn">
+		<div class="btnEntre">
 			Entreprise
 		</div>
 
-		<div class="btn" onClick="ani()">
+		<div class="btnEtu" onClick="ani()">
 				Étudiant
 		</div>
 	</div>
@@ -43,7 +45,6 @@
 	</div>
 
 	<div class="inscriptionEntreprise">
-	<form method="get">
 			<div class="FormInscription">
 				<label for="nom">Nom</label>
 				<input type="text" name="nom" required size="40"
@@ -78,45 +79,58 @@
 	</div>
 		<br>
 	<div id="inscriptionEtudiant">
-		<div class="sectionInscription">
+		<form method="POST">
 		<div class="form">
-			<input type="text" name="nom" autocomplete="off" required>
-			<label for="name" class="label-name">
+			<input type="text"  id="nom" name="nom" autocomplete="off" required>
+			<label for="nom" class="label-name">
 				<span class="content-name">Nom</span>
 			</label>
 		</div>
 		<div class="form">
-			<input type="text" name="prenom" autocomplete="off" required>
-			<label for="name" class="label-name">
+			<input type="text"  id="prenom" name="prenom" autocomplete="off" required>
+			<label for="prenom" class="label-name">
 				<span class="content-name">Prénom</span>
 			</label>
 		</div>
 		<div class="form">
-			<input type="text" name="email" autocomplete="off" required>
-			<label for="name" class="label-name">
+			<input type="text" id="mail" name="mail" autocomplete="off" required>
+			<label for="mail" class="label-name">
 				<span class="content-name">Email</span>
 			</label>
 		</div>
 		<div class="form">
-			<input type="text" name="numero" autocomplete="off" required>
-			<label for="name" class="label-name">
-				<span class="content-name">Numéro de telephone</span>
+				<input type="text"  id="mail2" name="mail2" autocomplete="off" required>
+				<label for="mail2" class="label-name">
+					<span class="content-name">Confirmation Mail</span>
+				</label>
+			</div>
+		<div class="form">
+			<input type="password"  id="mdp" name="mdp" autocomplete="off" required>
+			<label for="mdp" class="label-name">
+				<span class="content-name">					<i class="fas fa-lock"></i>
+					Mot de passe</span>
 			</label>
 		</div>
 		<div class="form">
-			<input type="text" name="specialite" autocomplete="off" required>
-			<label for="name" class="label-name">
+			<input type="password"  id="mdp2" name="mdp2" autocomplete="off" required>
+			<label for="mdp2" class="label-name">
+				<span class="content-name">Confirmation Mot de passe</span>
+			</label>
+		</div>
+		<div class="form">
+			<input type="text" id="specialite" name="specialite" autocomplete="off" required>
+			<label for="specialite" class="label-name">
 				<span class="content-name">Spécialité</span>
 			</label>
 		</div>
 		<div class="form">
-			<input type="text" name="statut" autocomplete="off" required>
-			<label for="name" class="label-name">
+			<input type="text" id="statut" name="statut" autocomplete="off" required>
+			<label for="statut" class="label-name">
 				<span class="content-name">Statut</span>
 			</label>
 		</div>
-	<div class="btn">Valider</div>	
-	</div>
+		<input class="btn" type="submit" name="forminscription" value="Valider">
+	</form>
 	</div>
 </body>
 </html>
