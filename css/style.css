@@ -184,6 +184,7 @@ a:hover{text-decoration: none; color: rgb(16, 39, 16); cursor: pointer;}
 .logo
 {
 	text-align: center;
+	width: 40px;
 }
 h1
 {
