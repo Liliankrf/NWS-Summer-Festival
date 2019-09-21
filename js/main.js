@@ -24,23 +24,33 @@ async function chargerJSON(fichier) {
 
 function ajouterHTML(etudiant){
 
-    let lesEtudiants = document.querySelector('#container');
+
+    
+    let lesEtudiants = document.querySelector('#containerEtudiant');
     let bouton = document.querySelector('#plus');
     
     console.log(etudiant.Nom);
  
-   let article = document.createElement('article');
-   article.classList.add('divetudiant' , etudiant.Prénom)
+
+   let divEtu = document.createElement('div');
+   divEtu.classList.add('divEtu')/*, etudiant.Prénom*/
 
    let titre = document.createElement('h3');
-   titre.innerHTML = `Specialité ${etudiant.Qualité1} - ${etudiant.Qualité2}`; // Ajoutons ici le titre récupéré
+   titre.innerHTML =  etudiant.Nom + ' ' + etudiant.Prénom;
+   //titre.innerHTML = `Specialité ${etudiant.Qualité1} - ${etudiant.Qualité2}`; // Ajoutons ici le titre récupéré
    
-   let p = document.createElement('p');
-   p.innerHTML = etudiant.Nom + ' ' + etudiant.Prénom;
+   let photo = document.createElement('IMG');
+   photo.setAttribute("src", etudiant.photo);
+   //titre.innerHTML = `test ${etudiant.photo}`; // Ajoutons ici le titre récupéré
 
-   article.appendChild(titre);
-   article.appendChild(p);
-   lesEtudiants.insertBefore(article, bouton);
+
+   let Qualités = document.createElement('p');
+   Qualités.innerHTML = etudiant.Qualité1 + ' ' + etudiant.Qualité2;
+
+   divEtu.appendChild(titre);
+   divEtu.appendChild(Qualités);
+   divEtu.appendChild(photo);
+   lesEtudiants.insertBefore(divEtu, bouton);
 }
 let i = 0;
 function ani(){
@@ -80,7 +90,9 @@ let h = 0;
 h++;
 if(h=1){
     setTimeout(function() { document.getElementById('logostart').style.display = 'none'; 
-    document.getElementById('ContainerAccueil').style.display = 'block';}, 3500);      
+    document.getElementById('ContainerAccueil').style.display = 'block';
+    document.getElementById('plus').style.display = 'block';
+    document.getElementById('containerEtudiant').style.display = 'block'; chargerPlus()}, 3500);      
 } 
 }
 
