@@ -258,7 +258,7 @@ form{
 .logo
 {
 	text-align: center;
-	width: 40%;
+	width: 20px;
 }
 h1
 {
@@ -296,29 +296,26 @@ p
 {
 	text-align: center;
 }
-#img
-{
-	padding-bottom: 35%;
-}
 .button1 
 {
 	font-size: 50px;
   	background-color: white;
   	color: black;
-  	border: 2px solid gray;
+  	border: 2px solid #5cb794;
   	padding: 28px;
   	width: 72%;
 }
 .btn1
 {
 	padding-bottom: 20px;
+	padding-top: 50%;
 }
 .button2
 {
 	font-size: 50px;
   	background-color: white;
   	color: black;
-  	border: 2px solid gray;
+  	border: 2px solid #5cb794;
   	padding: 25px;
   	width: 72%;	
 }
@@ -331,7 +328,7 @@ p
 	font-size: 50px;
   	background-color: white;
   	color: black;
-  	border: 2px solid gray;
+  	border: 2px solid #5cb794;
   	padding: 28px;
   	width: 72%;	
 }
@@ -343,8 +340,6 @@ footer
 {
 	position: fixed;
 	bottom: 0px;
-	border: solid;
-	background-color: lightgray;
 	height: 120px;
 	width: 100%;
 	padding-top: 20px;
@@ -367,34 +362,17 @@ footer
 }
 
 /*CSS aide étudiant*/
-*
-{
-	text-align: center;
-}
 #img
 {
 	padding-bottom: 10%;
 	width: 65%;
-}
-.button1 
-{
-	font-size: 50px;
-  	background-color: white;
-  	color: black;
-  	border: 2px solid gray;
-  	padding: 28px;
-  	width: 72%;
-}
-.btn1
-{
-	padding-bottom: 20px;
 }
 .button2
 {
 	font-size: 50px;
   	background-color: white;
   	color: black;
-  	border: 2px solid gray;
+  	border: solid #5cb794;
   	padding: 25px;
   	width: 72%;	
 }
@@ -407,7 +385,7 @@ footer
 	font-size: 50px;
   	background-color: white;
   	color: black;
-  	border: 2px solid gray;
+  	border: solid #5cb794;
   	padding: 28px;
   	width: 72%;	
 }
@@ -420,7 +398,7 @@ footer
 	font-size: 50px;
   	background-color: white;
   	color: black;
-  	border: 2px solid gray;
+  	border: solid #5cb794;
   	padding: 28px;
   	width: 72%;
 }
@@ -433,7 +411,7 @@ footer
 	font-size: 50px;
   	background-color: white;
   	color: black;
-  	border: 2px solid gray;
+  	border: solid #5cb794;
   	padding: 25px;
   	width: 72%;	
 }
@@ -446,7 +424,7 @@ footer
 	font-size: 50px;
   	background-color: white;
   	color: black;
-  	border: 2px solid gray;
+  	border: solid #5cb794;
   	padding: 28px;
   	width: 72%;	
 }
@@ -458,8 +436,6 @@ footer
 {
 	position: fixed;
 	bottom: 0px;
-	border: solid;
-	background-color: lightgray;
 	height: 120px;
 	width: 100%;
 	padding-top: 20px;
@@ -482,21 +458,17 @@ footer
 }
 
 /*CSS Page inscription entreprise*/
-*
+#logo2
 {
-	text-align: center;
-}
-#logo
-{
-	width: 40%;
+	width: 60%;
 	padding-bottom: 80px;
 	padding-top: 20px;
 }
-input
+.inscrition input
 {
 	font-size: 35px;
 	margin-bottom: 20px;
-	border-radius: 
+	border-radius: 20px;
 }
 .inscription
 {
@@ -504,7 +476,65 @@ input
 }
 button
 {
-	border-radius: 50px;
 	background-color: white;
 	margin-top: 50px;
+}
+
+/*CSS Page modification du profil*/
+h1
+{
+	padding-top: 15%;
+}
+#separateur
+{
+	width: 100%;
+	transform: translate(0%,-50%);
+}
+.modificationProfil input
+{
+	border-radius: 20px;
+	border-color: #D9E4AC;
+	font-size: 35px;
+}
+.modificationProfil
+{
+
+}
+.btnGif
+{
+	border-radius: 20px;
+}
+footer
+{
+	position: fixed;
+	bottom: 0px;
+	height: 120px;
+	width: 100%;
+	padding-top: 20px;	
+}
+#img4
+{
+	float: left;
+	width: 100px;
+	padding-left: 50px;
+}
+#img5
+{
+	width: 100px;
+}
+#img6
+{
+	width: 100px;
+	padding-right: 90px;
+	padding-left: 90px;
+}
+#img7
+{
+	width: 100px;
+}
+#img8
+{
+	width: 100px;
+	float: right;
+	padding-right: 50px;
 }
