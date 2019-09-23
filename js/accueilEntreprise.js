@@ -3,7 +3,8 @@ function test()
 {
 compteur++;
 if(h=1){
-    setTimeout(function() { document.getElementById('logostart').style.display = 'none';chargerPlus()}, 3500);      
+    setTimeout(function() {  document.getElementsByTagName("footer").item(0).style.display = 'block';document.getElementById('logostart').style.display = 'none';document.getElementById('Accueil').style.display = 'block';chargerPlus()}
+    , 3500);      
 } 
 }
 
