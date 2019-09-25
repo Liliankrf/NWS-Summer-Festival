@@ -96,6 +96,12 @@ function ani(){
     console.log("la valeur de j est : " + j);
     
 }
+
+function Message(){
+    var msg ="Version Beta pour Entreprise ";
+    alert(msg);
+}
+
 let j = 0;
 function ani2(){
     j++;
@@ -114,7 +120,8 @@ function test()
 compteur++;
 if(h=1){
     setTimeout(function() { document.getElementById('logostart').style.display = 'none'; 
-    document.getElementById('ContainerAccueil').style.display = 'block';chargerPlus()}, 3500);      
+    document.getElementById('ContainerAccueil').style.display = 'block';
+    document.getElementById('basdepage').style.display = 'block';chargerPlus()}, 3500);      
 } 
 }
 

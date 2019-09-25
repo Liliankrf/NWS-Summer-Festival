@@ -66,10 +66,10 @@ function ajouterHTML(etudiant){
 
    let Contacter = document.createElement('a');
    Contacter.innerHTML = '<i class="fas fa-envelope"></i>Contacter';
-   Contacter.setAttribute("href", '#');
+   Contacter.setAttribute("href", 'mailto:' + etudiant.Email + '?subject=Votre%20profil%20nous%20intéresse');
    let Intéresser = document.createElement('a');
    Intéresser.innerHTML = 'Intéresser<i class="fas fa-star"></i>';
-   Intéresser.setAttribute("href", '#');
+   Intéresser.setAttribute("onClick", 'border()');
 
    containerCard.appendChild(profileCard);
    profileCard.appendChild(imageContainer);
@@ -83,6 +83,17 @@ function ajouterHTML(etudiant){
    
    lesEtudiants.insertBefore(containerCard, bouton);
 }
+/*
+let x = 0;
+function border(){
 
-
+    x++;
+    if(x%2 === 0){
+        document.getElementsByClassName("profileCard")[0].style.boxShadow  = "0px 0px 0px 0px #5CB794";
+    }
+    else{
+        document.getElementsByClassName("profileCard")[0].style.boxShadow = "0px 0px 10px 5px #5CB794";
+    }
+}
+*/
 window.onload = test;
