@@ -508,27 +508,27 @@ footer
 	width: 100%;
 	padding-top: 20px;	
 }
-#img4
+.information1
 {
 	float: left;
 	width: 100px;
 	padding-left: 50px;
 }
-#img5
+.student1
 {
 	width: 100px;
 }
-#img6
+.loupe1
 {
 	width: 100px;
 	padding-right: 90px;
 	padding-left: 90px;
 }
-#img7
+.favorites-button1
 {
 	width: 100px;
 }
-#img8
+.menu1
 {
 	width: 100px;
 	float: right;
@@ -538,7 +538,8 @@ footer
 /*CSS envoie mail entreprise*/
 #img9
 {
-	width: 50px;
+	width: 80%;
+	margin-top: 35%;
 }
 footer
 {
@@ -548,27 +549,81 @@ footer
 	width: 100%;
 	padding-top: 20px;	
 }
-#img10
+.information1
 {
 	float: left;
 	width: 100px;
 	padding-left: 50px;
 }
-#img11
+.student1
 {
 	width: 100px;
 }
-#img12
+.loupe1
 {
 	width: 100px;
 	padding-right: 90px;
 	padding-left: 90px;
 }
-#img13
+.favorites-button1
 {
 	width: 100px;
 }
-#img14
+.menu1
+{
+	width: 100px;
+	float: right;
+	padding-right: 50px;
+}
+
+/*CSS Page signaler un problème*/
+footer
+{
+	position: fixed;
+	bottom: 0px;
+	height: 120px;
+	width: 100%;
+	padding-top: 20px;	
+}
+.information1
+{
+	float: left;
+	width: 100px;
+	padding-left: 50px;
+}
+.student1
+{
+	width: 100px;
+}
+.loupe1
+{
+	width: 100px;
+	padding-right: 90px;
+	padding-left: 90px;
+}
+.favorites-button1
+{
+	width: 100px;
+}
+.menu1
+{
+	width: 100px;
+	float: right;
+	padding-right: 50px;
+}
+
+/*CSS footer des pages étudiant*/
+.information
+{
+	float: left;
+	width: 100px;
+	padding-left: 50px;
+}
+.menu
+{
+	width: 100px;
+}
+.student
 {
 	width: 100px;
 	float: right;
