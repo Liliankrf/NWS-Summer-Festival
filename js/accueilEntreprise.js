@@ -8,8 +8,6 @@ if(h=1){
 } 
 }
 
-
-
 async function chargerPlus(){
     console.log('je charge...');
 
@@ -37,7 +35,7 @@ function ajouterHTML(etudiant){
     let bouton = document.querySelector('#plus');
     
     console.log(etudiant.Nom);
- 
+
 
    let containerCard = document.createElement('div');
    containerCard.classList.add('containerCard');
