@@ -46,8 +46,8 @@ a:hover {
 
 #ContainerAccueil .logoAccueil {
     margin-top: 10px;
-    width: 300px;
-    height: 150px;
+    width: 400px;
+    height: 250px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -63,10 +63,21 @@ a:hover {
 }
 
 .logoAccueil2 {
-    width: 40%;
+    width: 50%;
     height: auto;
     animation-duration: 4s;
     animation-name: fadeInOut;
+}
+#basdepage{
+    display: block;
+    width: 100%;
+    display: none;
+}
+
+#basdepage img{
+    display: block;
+    width: 100%;
+    bottom: 0;
 }
 
 @keyframes fadeInOut {
@@ -291,6 +302,12 @@ form {
     display: none;
 }
 
+.espace{
+    display: block;
+    width: 100%;
+    height: 135px;
+}
+
 .profileCard {
     display: flex;
     flex-direction: row;
@@ -299,7 +316,8 @@ form {
     padding: 20px 20px;
     border: 1px solid #5CB794;
     margin-top: 30px;
-    margin-bottom: 5px;
+    transition: 0.5s ease;
+    box-shadow: 0px 0px 0px 0px #5CB794;  
 }
 
 .imageContainer {
@@ -384,6 +402,13 @@ i {
 }
 @media only screen and (max-width: 760px){
     
+    .cardBottom ul li img{
+        width: 32Px;
+        height: 32px;
+        transition: all 0.3s ease;
+    }
+        
+
     #test{
         width: 320px;
     }
@@ -415,7 +440,7 @@ i {
     .profileCard {
         display: flex;
         flex-direction: row;
-        background: #f3f3f3;
+        background: #FFFFFF;
         border-radius: 25px;
         padding: 20px 20px;
         border: 1px solid #5CB794;
@@ -510,13 +535,14 @@ i {
 }
 
 .cardBottom{
-    background: #f3f3f3;
+    background: #FFFFFF;
     height: 50px;
     position: relative;
     width: 100%;
     z-index: 100;
     border-radius: 3px;
     border-top-style: none;
+    box-shadow: 0px -6px 10px 1px rgba(49, 49, 49, 0.2);
 }
 .cardBottom ul{
     list-style: none;
@@ -545,13 +571,18 @@ i {
     color: #5CB794;
     transition: all 0.3s ease;
 }
-
-.cardBottom ul li a:hover{
-    text-decoration: none;
-    color: rgb(52, 100, 82);
-    transition: all 0.8s ease;
+.cardBottom ul li img{
+    width: 30Px;
+    height: 30px;
+    transition: all 0.3s ease;
+    margin: auto;
 }
+
 
 footer{
     display:none;
+    bottom: -5px;
+    position: fixed;
+    width: 100%; 
 }
+
