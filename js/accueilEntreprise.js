@@ -59,10 +59,10 @@ function ajouterHTML(etudiant){
    //titre.innerHTML = `test ${etudiant.photo}`; // Ajoutons ici le titre récupéré
 
    let Qualités = document.createElement('h3');
-   Qualités.innerHTML = etudiant.Qualité1 + ' ' + etudiant.Qualité2;
+   Qualités.innerHTML = etudiant.Spécialitée;
 
    let desc = document.createElement('p');
-   desc.innerHTML = etudiant.Unedescriptionlibre;
+   desc.innerHTML = etudiant.CompétencePrincipale1 + ' ' + etudiant.CompétencePrincipale2;
 
    let Contacter = document.createElement('a');
    Contacter.innerHTML = '<i class="fas fa-envelope"></i>Contacter';
